@@ -91,10 +91,11 @@ public class OTPSessionBean implements OTPSessionBeanRemote, OTPSessionBeanLocal
 	
 		  //authenticate the email sender's google acc
 		  //if the sender acc's require 2FA, an App password is needed to be used
+		  //I have a 2FA, so this app password will need to update every authentication
 	        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 	        	   protected PasswordAuthentication getPasswordAuthentication() {
 	        		    return new PasswordAuthentication("choongwenjian@gmail.com", 
-	        		    		"mcjxvfjvyfpygxhm");
+	        		    		"vxtlqlvycuuqmafq");
 	        		   }
 	        		  });
 	        session.setDebug(true);
